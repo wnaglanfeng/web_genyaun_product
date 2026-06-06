@@ -6,6 +6,8 @@ export default defineConfig({
   server: {
     allowedHosts: [
       '.fcv3.1473200263418811.cn-hangzhou.fc.devsapp.net',
+      'www.igenyuan.com',
+      '.igenyuan.com',
     ],
   },
 })
