@@ -106,12 +106,18 @@
   <!-- 五、第三方SDK -->
   <div class="section">
     <h2>五、第三方 SDK 说明</h2>
-    <p>App 使用 DCloud UniApp X 框架开发，集成了以下基础 SDK：</p>
+    <p>App 使用 DCloud UniApp X 框架开发，为实现广告展示、应用运行保障等功能，集成了以下第三方 SDK：</p>
     <ul>
       <li><strong>DCloud 统计 SDK</strong>：仅用于 App 崩溃分析和性能优化，不收集用户隐私信息。详见 <a href="https://www.dcloud.io/privacy.html" style="color:#FF7828;">DCloud 隐私政策</a></li>
-      <li><strong>uni-ad 广告 SDK</strong>：用于在应用内展示广告内容、进行广告投放与效果统计。该 SDK 可能会根据广告业务需要收集设备标识信息、网络信息、应用信息等。详见 <a href="https://doc.dcloud.net.cn/uni-ad/privacy.html" style="color:#FF7828;">uni-ad 隐私政策</a></li>
+      <li><strong>uni-AD原生广告</strong>：开发者为数字天堂（北京）网络技术有限公司。涉及的个人信息类型包括设备品牌、型号、操作系统版本、分辨率、设备语言、手机系统时间、设备名称、时区、屏幕密度、网络类型、IP 地址、User Agent 信息、BSSID、SSID、IMEI/MEID、IMSI、GAID（仅 GMS 服务）、AndroidID、OAID、运营商信息、位置信息、传感器信息、应用安装列表，以及应用名称、应用包名、版本号等应用信息。使用目的为广告投放及第三方广告联盟 SDK 聚合服务。隐私政策链接：<a href="https://dcloud.io/license/uni-ad.html" style="color:#FF7828;">uni-AD原生广告 隐私政策</a></li>
+      <li><strong>Sigmob Android SDK</strong>：通过 uni-ad 聚合接入，开发者为北京创智汇聚科技股份有限公司。涉及的个人信息类型包括设备制造商、设备品牌、设备型号、操作系统版本、电池信息、时区、IMEI、AndroidID、OAID、IDFA、IDFV、mcc&amp;mnc、系统总内存空间、磁盘总空间、可用存储空间大小、位置信息、粗略位置信息、广告曝光与点击数据、应用陀螺仪传感器、线性加速度传感器、磁场传感器、旋转矢量传感器、网络状态、崩溃数据等。使用目的为广告投放、广告归因、广告反作弊、广告统计分析及 App 崩溃分析。隐私政策链接：<a href="https://doc.sigmob.com/sigmob/140/" style="color:#FF7828;">Sigmob Android SDK 隐私政策</a></li>
+      <li><strong>Octopus SDK Android</strong>：通过 uni-ad 聚合接入，开发者为北京圣盈科技有限公司。涉及的个人信息类型包括 OAID、Android ID、GAID、IDFA 等设备标识符，加速度传感器、陀螺仪传感器、线性加速度传感器、磁场传感器、旋转矢量传感器，设备品牌、型号、软件系统版本、屏幕密度、屏幕分辨率、设备语言、设备时区、CPU 信息、可用存储空间大小、手机系统重启时间、磁盘总空间、系统总内存空间、运营商信息、Wi-Fi 状态、应用包名、版本号等。使用目的为广告投放及监测归因、反作弊、统计分析、减少 App 崩溃并提供稳定服务。隐私政策链接：<a href="http://doc.zhangyuyidong.cn/#/zh-cn/guide/UsePrivacy" style="color:#FF7828;">Octopus SDK Android 隐私政策</a></li>
+      <li><strong>AdScope SDK Android</strong>：通过 uni-ad 聚合接入，开发者为上海倍孜网络技术有限公司。涉及的个人信息类型包括设备品牌、设备型号、设备时区、设备语言、系统版本、UserAgent 信息、屏幕高宽、屏幕方向、屏幕 DPI 信息、系统更新时间、磁盘空间、物理内存、网络类型、运营商、应用名称、应用版本号、应用包名、交互数据、广告展示/点击/转化数据、崩溃数据、性能数据，以及 Android 平台的 OAID、CPU、运行状态、SIM 卡状态。使用目的为调整广告投放策略、统计分析、反作弊、保障广告正常展示与交互，并通过崩溃与性能数据优化 SDK 稳定性。隐私政策链接：<a href="https://sdkdocv3.beizi.biz/#/zh-cn/guide/UsePrivacy" style="color:#FF7828;">AdScope SDK Android 隐私政策</a></li>
+      <li><strong>聚力阅盟 SDK</strong>：通过 uni-ad 聚合接入，开发者为杭州聚力阅盟科技有限公司。涉及的个人信息类型包括设备型号、操作系统版本、唯一设备标识符、设备环境等软硬件特征信息，以及 GPS 位置、WLAN 接入点、蓝牙和基站等传感器信息。使用目的为广告投放及广告监测归因、反作弊、摇一摇广告投放。隐私政策链接：<a href="https://idbj.juliyuemeng.com/privacy" style="color:#FF7828;">聚力阅盟隐私政策</a></li>
+      <li><strong>优推广告SDK</strong>：通过 uni-ad 聚合接入，开发者为北京乐游阳光科技有限公司。涉及的个人信息类型包括设备品牌、设备型号、软件系统版本、屏幕密度、屏幕分辨率、存储信息、运营商信息、设备时区、设备语言、网络信息、IMEI、OAID、AndroidId、IMSI、IDFA、IDFV、IP 地址、MAC 地址、GPS 位置信息、WIFI 信息、应用安装列表、设备传感器信息、线性加速度传感器信息、陀螺仪传感器信息、重力传感器信息、宿主应用进程信息。使用目的为向最终用户提供广告服务。隐私政策链接：<a href="https://lemon.gameley.com/flowdocs/%E4%BC%98%E6%8E%A8%E5%B9%BF%E5%91%8A%E4%BD%BF%E7%94%A8%E6%8C%87%E5%8D%97/%E9%9A%90%E7%A7%81%E5%8D%8F%E8%AE%AE/%E4%BC%98%E6%8E%A8%E5%B9%BF%E5%91%8A%E5%B9%B3%E5%8F%B0SDK%E9%9A%90%E7%A7%81%E6%94%BF%E7%AD%96.html" style="color:#FF7828;">优推广告SDK 隐私政策</a></li>
+      <li><strong>FunlinkAndroidSDK</strong>：通过 uni-ad 聚合接入，开发者为北京泛连科技有限公司。涉及的个人信息类型包括设备品牌、型号、软件系统版本、屏幕密度、屏幕分辨率、设备语言、设备时区、IMEI、IMSI、ICCID、GAID、MEID、IDFA、IDFV、AndroidID、OAID、手机系统重启时间、设备 MAC 地址、User Agent、IP 地址、运营商信息、Wi-Fi 状态、网络信号强度、应用版本、应用包名、应用名称、应用前后台状态、应用列表信息、加速度传感器、陀螺仪传感器、广告展示/点击/转化等交互数据、系统崩溃数据、性能数据。使用目的为广告投放及广告监测归因、反作弊、摇一摇广告投放、广告投放统计分析，以及提升 SDK 稳定性、减少 App 崩溃。隐私政策链接：<a href="https://www.adfunlink.com/doc/privacy.html" style="color:#FF7828;">FunlinkAndroidSDK 隐私政策</a></li>
     </ul>
-    <p>除上述 SDK 外，App <strong>未接入其他社交分享 SDK</strong>。如后续新增第三方 SDK，我们会及时更新本隐私政策。</p>
+    <p>除上述 SDK 外，App <strong>未接入其他社交分享 SDK</strong>。如后续新增、停用或调整第三方 SDK 及广告合作方，我们会及时更新本隐私政策。</p>
   </div>
 
   <!-- 六、安全保护措施 -->
