@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>信息收集清单及第三方信息共享清单</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+            line-height: 1.8;
+            color: #333333;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 850px;
+            margin: 40px auto;
+            background: #ffffff;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+        h1 {
+            font-size: 26px;
+            text-align: center;
+            color: #111111;
+            margin-bottom: 30px;
+            font-weight: 600;
+        }
+        h2 {
+            font-size: 20px;
+            color: #0d6efd;
+            margin-top: 35px;
+            margin-bottom: 20px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #e9ecef;
+        }
+        h3 {
+            font-size: 16px;
+            color: #198754;
+            margin-top: 25px;
+            margin-bottom: 12px;
+            padding-left: 8px;
+            border-left: 4px solid #198754;
+        }
+        p {
+            margin: 0 0 12px 0;
+            text-align: justify;
+        }
+        .intro-p {
+            color: #666666;
+            font-size: 15px;
+            background: #f8f9fa;
+            padding: 12px 15px;
+            border-radius: 6px;
+            margin-bottom: 20px;
+        }
+        ul {
+            margin: 0 0 20px 0;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+            text-align: justify;
+        }
+        .info-card {
+            background: #ffffff;
+            border: 1px solid #dee2e6;
+            border-radius: 8px;
+            padding: 18px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .info-item {
+            margin-bottom: 8px;
+            font-size: 15px;
+        }
+        .info-item:last-child {
+            margin-bottom: 0;
+        }
+        .label {
+            font-weight: bold;
+            color: #495057;
+            display: inline-block;
+            width: 90px;
+        }
+        .alert-box {
+            background-color: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        .success-box {
+            background-color: #d1e7dd;
+            border: 1px solid #badbcc;
+            color: #0f5132;
+            padding: 15px;
+            border-radius: 6px;
+            margin-bottom: 25px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                margin: 0;
+                padding: 20px;
+                border-radius: 0;
+            }
+            h1 { font-size: 22px; }
+            h2 { font-size: 18px; }
+            .label { display: block; width: auto; margin-bottom: 2px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>信息收集清单及第三方信息共享清单</h1>
+
+    <h2>一、个人信息收集清单</h2>
+
+    <h3>（一）设备与运行基础信息（系统自动获取）</h3>
+    <div class="intro-p">为保障APP正常运行、适配设备型号、修复故障、保障使用安全，自动获取极简设备基础信息，无任何隐私敏感数据：</div>
+    <div class="info-card">
+        <div class="info-item"><span class="label">收集项：</span>设备型号、操作系统版本、设备唯一标识符（OAID/Android ID、IDFA）、网络类型、APP运行日志、崩溃日志</div>
+        <div class="info-item"><span class="label">收集方式：</span>系统授权自动获取，用户可在手机系统设置中关闭权限</div>
+        <div class="info-item"><span class="label">收集用途：</span>适配设备运行、排查APP故障、优化产品体验、防范异常登录与恶意使用</div>
+        <div class="info-item"><span class="label">是否必填：</span>基础运行必需，关闭后可能导致APP部分功能异常或无法使用</div>
+        <div class="info-item"><span class="label">存储期限：</span>仅留存近期运行日志，故障排查完成后自动清理，最长不超过30天</div>
+    </div>
+
+    <h3>（二）功能使用产生数据（用户自主产生）</h3>
+    <div class="intro-p">用户使用本APP各类工具功能过程中自主产生、保存的数据，仅用于本地使用及用户自主云端同步：</div>
+    <div class="info-card">
+        <div class="info-item"><span class="label">收集项：</span>工具使用记录、用户本地设置偏好、功能配置数据、用户自主保存的文本/文件数据（仅用户主动保存内容）</div>
+        <div class="info-item"><span class="label">收集方式：</span>用户操作自主生成，本地存储为主</div>
+        <div class="info-item"><span class="label">收集用途：</span>记录用户使用习惯、保存用户个性化设置、延续工具使用状态，仅服务于用户自身使用需求</div>
+        <div class="info-item"><span class="label">是否必填：</span>非必填，用户可随时手动清空、删除相关数据</div>
+        <div class="info-item"><span class="label">存储期限：</span>数据留存至用户主动删除或卸载APP为止</div>
+    </div>
+
+    <h3>（三）权限相关可获取信息（用户主动授权）</h3>
+    <div class="intro-p">本APP所有敏感权限均为用户主动授权后才可获取，未授权绝不收集，且仅用于对应工具核心功能，无额外滥用：</div>
+    <ul>
+        <li><strong>存储权限：</strong>用于保存工具生成的文件、图片、文档至用户手机本地，支持用户导出、查看数据，拒绝授权则无法保存本地文件，不影响基础功能使用</li>
+        <li><strong>网络权限：</strong>用于APP版本更新校验、云端数据同步、基础功能加载，为APP运行基础权限</li>
+    </ul>
+
+    <h3>（四）明确不收集的信息</h3>
+    <div class="alert-box">
+        <strong>本APP绝不主动收集以下非必要敏感个人信息：</strong><br>
+        身份证信息、人脸信息、地理位置、通讯录、相册、麦克风、摄像头、短信记录、支付信息、生物识别信息等一切与工具核心功能无关的隐私数据。
+    </div>
+
+    <h2>二、第三方信息共享清单</h2>
+    <p>本APP严格遵守个人信息保护相关法律法规，坚持「最小共享、仅必要共享」原则，不会向无关第三方出售、出租、交换用户任何个人信息。仅为实现APP基础服务、运维、合规统计需求，与合规第三方服务商进行极简信息共享，所有第三方均具备合法资质，且签署保密协议，严格保障用户信息安全。</p>
+
+    <h3>（一）第三方共享基本原则</h3>
+    <ul>
+        <li>仅共享实现服务必需的最小信息范围，绝不共享用户敏感个人信息；</li>
+        <li>所有第三方无独立使用、泄露、二次传播用户信息的权限；</li>
+        <li>第三方服务终止后，立即销毁全部共享的用户数据；</li>
+        <li>不会向任何商业主体、无关机构、境外第三方共享用户个人信息。</li>
+    </ul>
+
+    <h3>（二）具体第三方共享明细</h3>
+    
+    <div class="info-card">
+        <strong style="color: #212529; display: block; margin-bottom: 10px;">1. 应用统计与运维服务第三方</strong>
+        <div class="info-item"><span class="label">第三方主体：</span>主流合规移动统计平台（如友盟）</div>
+        <div class="info-item"><span class="label">共享信息：</span>设备型号、系统版本、APP使用时长、功能点击量、崩溃日志、网络状态（无任何用户身份隐私信息）</div>
+        <div class="info-item"><span class="label">共享用途：</span>统计APP使用情况、分析产品体验问题、修复程序BUG、优化工具功能、保障APP稳定运行</div>
+        <div class="info-item"><span class="label">存储与保护：</span>第三方严格加密存储，仅用于数据统计分析，不关联用户个人身份，数据到期自动清理</div>
+    </div>
+
+    <div class="info-card">
+        <strong style="color: #212529; display: block; margin-bottom: 10px;">2. 应用分发与更新服务第三方</strong>
+        <div class="info-item"><span class="label">第三方主体：</span>手机应用商店、版本更新服务提供商</div>
+        <div class="info-item"><span class="label">共享信息：</span>APP当前版本号、设备系统版本</div>
+        <div class="info-item"><span class="label">共享用途：</span>检测APP最新版本、推送版本更新提示，保障用户使用最新功能</div>
+    </div>
+
+    <h3>（三）绝不共享的信息与场景</h3>
+    <ul>
+        <li>绝不向广告商、营销机构共享用户任何个人信息，本APP无隐私信息导流、精准广告推送行为；</li>
+        <li>绝不共享用户工具使用私密数据、本地保存文件、个性化设置等用户私有数据；</li>
+        <li>无任何第三方SDK私自收集、上传用户隐私信息，所有接入SDK均为合规基础服务类SDK；</li>
+        <li>不会在未经用户单独授权的情况下，向任何新增第三方共享用户信息。</li>
+    </ul>
+
+    <h3>（四）用户权利说明</h3>
+    <div class="success-box">
+        用户可随时在手机系统设置中关闭相关权限，可手动清空APP内工具使用数据及本地配置数据；若对信息收集、共享有疑问，可通过APP内客服通道联系我们，我们将在<strong>3个工作日内</strong>响应处理。
+    </div>
+</div>
+
+</body>
+</html>
